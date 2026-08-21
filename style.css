@@ -1,0 +1,92 @@
+.contact-button,
+.whatsapp-button {
+    display: block;
+    max-width: 350px;
+    margin: 12px auto;
+    padding: 14px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-button {
+    background: #0b1f3a;
+    color: white;
+}
+
+.whatsapp-button {
+    background: #25D366;
+    color: white;
+}
+
+.contact-button:hover,
+.whatsapp-button:hover {
+    opacity: 0.85;
+}
+
+#vantagens {
+    text-align: center;
+}
+
+#vantagens h2 {
+    color: #0b1f3a;
+    margin-bottom: 25px;
+}
+
+.vantagem {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.vantagem h3 {
+    color: #0b1f3a;
+    margin-bottom: 8px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.logo-icon {
+    font-size: 45px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.logo p {
+    margin: 3px 0 0;
+    font-size: 14px;
+}
+#contactForm {
+    max-width: 500px;
+    margin: 25px auto 0;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 14px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#contactForm textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+#contactForm button {
+    width: 100%;
+}

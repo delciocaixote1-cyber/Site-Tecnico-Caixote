@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Técnico Caixote - Serviços de Informática</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
-        <h1>Técnico Caixote</h1>
-        <p>Soluções em Informática</p>
+  <header>
+
+    <div class="logo">
+        <span class="logo-icon">💻</span>
+        <div>
+            <h1>Técnico Caixote</h1>
+            <p>Assistência Técnica & Soluções Informáticas</p>
+        </div>
+    </div>    
 
         <nav>
             <a href="#inicio">Início</a>
@@ -54,7 +62,31 @@
             <p>Serviços de impressão, cópia e documentos.</p>
         </section>
 
+<section id="vantagens">
 
+    <h2>Por que escolher o Técnico Caixote?</h2>
+
+    <div class="vantagem">
+        <h3>⚡ Atendimento rápido</h3>
+        <p>Procuramos resolver os problemas dos nossos clientes com rapidez.</p>
+    </div>
+
+    <div class="vantagem">
+        <h3>🛠️ Assistência técnica</h3>
+        <p>Serviços de manutenção e reparação de equipamentos informáticos.</p>
+    </div>
+
+    <div class="vantagem">
+        <h3>💻 Soluções informáticas</h3>
+        <p>Soluções para computadores, software, redes e tecnologia.</p>
+    </div>
+
+    <div class="vantagem">
+        <h3>📱 Atendimento personalizado</h3>
+        <p>Procuramos entender cada problema e oferecer uma solução adequada.</p>
+    </div>
+
+</section>
         <section id="sobre">
             <h2>Sobre mim</h2>
 
@@ -75,14 +107,38 @@
 
             <p>📞 <strong>Telefone:</strong></p>
 
-            <p>864 576 664</p>
-            <p>835 316 062</p>
-            <p>850 313 445</p>
+        <a href="tel:+258864576664" class="contact-button">
+    📞 864 576 664
+</a>
+
+<a href="tel:+258835316062" class="contact-button">
+    📞 835 316 062
+</a>
+
+<a href="tel:+258850313445" class="contact-button">
+    📞 850 313 445
+</a>
+
+<a href="https://wa.me/258864576664" class="whatsapp-button">
+    💬 Falar pelo WhatsApp
+</a>
 
             <p>📍 <strong>Localização:</strong></p>
             <p>Nampula - Mutauanha</p>
         </section>
+<h3>Envie uma mensagem</h3>
 
+<form id="contactForm">
+
+    <input type="text" id="nome" placeholder="Seu nome" required>
+
+    <input type="tel" id="telefone" placeholder="Seu telefone" required>
+
+    <textarea id="mensagem" placeholder="Como podemos ajudar?" required></textarea>
+
+    <button type="submit">💬 Enviar pelo WhatsApp</button>
+
+</form>
     </main>
 
 
