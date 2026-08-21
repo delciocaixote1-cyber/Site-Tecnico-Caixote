@@ -1,11 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    background: #0b1f3a;
+    color: white;
+    padding: 22px 18px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.15);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    text-align: left;
+}
+
+.logo-icon {
+    font-size: 45px;
+}
+
+.logo h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.logo p {
+    font-size: 13px;
+    margin-top: 2px;
+}
+
+nav {
+    text-align: center;
+    margin-top: 18px;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 5px 7px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #0b1f3a, #173f6d);
+    color: white;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 30px;
+    background: rgba(255,255,255,0.12);
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero h2 span {
+    display: block;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: auto;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+}
+
+.primary-button,
+.secondary-button {
+    display: inline-block;
+    padding: 14px 24px;
+    margin: 6px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.primary-button {
+    background: white;
+    color: #0b1f3a;
+}
+
+.secondary-button {
+    border: 1px solid white;
+    color: white;
+}
+
+
+/* SEÇÕES */
+
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 75px 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title span,
+.about-content span {
+    color: #1769aa;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.section-title h2 {
+    color: #0b1f3a;
+    font-size: 32px;
+    margin: 8px 0;
+}
+
+.section-title p {
+    max-width: 650px;
+    margin: auto;
+    color: #666;
+}
+
+
+/* SERVIÇOS */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-card {
+    background: white;
+    padding: 28px 22px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+    transition: transform 0.2s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    color: #0b1f3a;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: #666;
+}
+
+
+/* VANTAGENS */
+
+.light-section {
+    max-width: none;
+    background: #edf3f9;
+}
+
+.light-section > * {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.advantage {
+    background: white;
+    padding: 25px 18px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.advantage > div {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.advantage h3 {
+    color: #0b1f3a;
+    margin-bottom: 8px;
+}
+
+.advantage p {
+    color: #666;
+}
+
+
+/* PREÇOS */
+
+.price-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.price-card {
+    position: relative;
+    background: white;
+    padding: 30px 20px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+}
+
+.price-card h3 {
+    color: #0b1f3a;
+    font-size: 21px;
+}
+
+.price {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 15px 0;
+    color: #1769aa;
+}
+
+.featured {
+    border: 2px solid #1769aa;
+}
+
+.popular {
+    font-size: 11px;
+    font-weight: bold;
+    color: #1769aa;
+    margin-bottom: 10px;
+}
+
+.price-note {
+    text-align: center;
+    margin-top: 25px;
+    color: #666;
+}
+
+
+/* SOBRE */
+
+.about-section {
+    max-width: none;
+    background: #0b1f3a;
+    color: white;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.about-icon {
+    font-size: 90px;
+}
+
+.about-content h2 {
+    font-size: 34px;
+    margin: 5px 0 15px;
+}
+
+.about-content p {
+    margin-bottom: 12px;
+    opacity: 0.9;
+}
+
+.location {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+/* CONTACTO */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.contact-info,
+.contact-form {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+}
+
+.contact-info h3,
+.contact-form h3 {
+    color: #0b1f3a;
+    margin-bottom: 20px;
+}
+
 .contact-button,
 .whatsapp-button {
     display: block;
-    max-width: 350px;
-    margin: 12px auto;
-    padding: 14px;
-    border-radius: 8px;
     text-align: center;
+    padding: 14px;
+    margin: 10px 0;
+    border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
 }
@@ -20,73 +370,182 @@
     color: white;
 }
 
-.contact-button:hover,
-.whatsapp-button:hover {
-    opacity: 0.85;
+.contact-location {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
 }
 
-#vantagens {
-    text-align: center;
+.contact-location p {
+    margin-top: 5px;
 }
 
-#vantagens h2 {
-    color: #0b1f3a;
-    margin-bottom: 25px;
-}
 
-.vantagem {
-    background: white;
-    padding: 20px;
-    margin: 15px 0;
-    border-radius: 12px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-}
-
-.vantagem h3 {
-    color: #0b1f3a;
-    margin-bottom: 8px;
-}
-.logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    margin-bottom: 20px;
-}
-
-.logo-icon {
-    font-size: 45px;
-}
-
-.logo h1 {
-    margin: 0;
-    font-size: 30px;
-}
-
-.logo p {
-    margin: 3px 0 0;
-    font-size: 14px;
-}
-#contactForm {
-    max-width: 500px;
-    margin: 25px auto 0;
-}
+/* FORMULÁRIO */
 
 #contactForm input,
 #contactForm textarea {
     width: 100%;
     padding: 14px;
-    margin: 8px 0;
+    margin-bottom: 12px;
     border: 1px solid #ddd;
     border-radius: 8px;
     font-size: 16px;
+    font-family: Arial, sans-serif;
 }
 
 #contactForm textarea {
-    height: 120px;
+    height: 130px;
     resize: vertical;
 }
 
 #contactForm button {
     width: 100%;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    background: #0b1f3a;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    background: #071527;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.footer-logo {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+footer p {
+    opacity: 0.8;
+    margin: 5px;
+}
+
+.footer-links {
+    margin: 20px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+.copyright {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+
+/* BOTÃO TOPO */
+
+.top-button {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0b1f3a;
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 24px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+
+/* CELULAR */
+
+@media (max-width: 800px) {
+
+    .services-grid,
+    .price-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .advantages-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h2 {
+        font-size: 34px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .logo h1 {
+        font-size: 24px;
+    }
+
+    .logo p {
+        font-size: 11px;
+    }
+
+    .logo-icon {
+        font-size: 36px;
+    }
+
+    nav a {
+        font-size: 12px;
+        margin: 4px;
+    }
+
+    .hero {
+        min-height: 500px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .services-grid,
+    .price-grid,
+    .advantages-grid {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 55px 15px;
+    }
+
+    .section-title h2 {
+        font-size: 27px;
+    }
+
+    .about-icon {
+        font-size: 65px;
+    }
+
 }
